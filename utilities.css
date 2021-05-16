@@ -1,0 +1,29 @@
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.centre {
+  align-items: center;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex .left {
+  text-align: center;
+  flex-basis: 150px;
+}
+.flex .right {
+  align-items: center;
+  padding: 30px;
+  flex-basis: 100px;
+}
+.flex .right1 {
+  padding-right: 80px;
+}
+.flex .left1{
+  padding-left: 50px;
+  padding-right: 200px;
+  padding-top: 50px;
+}

@@ -1,0 +1,294 @@
+@import "utilities.css";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  background: #9165cc;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+label.logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 100px;
+  text-transform: uppercase;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+}
+.top .left img {
+  width: 500px;
+  margin-top: 80px;
+  margin-left: -50px;
+  margin-bottom: -2px;
+}
+.top .right h1 {
+  color: #331758;
+  margin-bottom: 0.5rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.top .right h3 {
+  color: #07020e;
+  margin-bottom: 0.5rem;
+}
+.top .right p {
+  color: #07020e;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+#buttons {
+  border: 1px solid;
+  background-color: #9165cc;
+  width: 100px;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 5px;
+}
+.sec {
+  background-color: #ede5f0;
+  width: 100%;
+  height: 500px;
+  z-index: 1;
+}
+section.about .heading {
+  color: #331758;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  margin-top: 0.9rem;
+}
+section.about .heading + p {
+  color: #07020e;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+section.about .container .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+}
+section.about {
+  background-color: #ecd6f5;
+  padding: 20px;
+  z-index: 1;
+}
+section.about .box .card {
+  background-color: white;
+  padding: 5rem 2rem;
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+}
+section.about .box .card img {
+  position: absolute;
+  top: 1.2rem;
+  left: 44%;
+}
+section.about .box .card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.about .box .card p {
+  line-height: 1.5;
+}
+section.project {
+  padding: 30px;
+  z-index: 1;
+}
+section.project .heading {
+  color: #331758;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+section.project .heading + p {
+  text-align: left;
+  color: #07020e;
+}
+section.project .right1 img {
+  width: 400px;
+}
+section.project .left1 h2 {
+  margin-bottom: 1rem;
+}
+section.project .left1 p {
+  line-height: 1.5;
+}
+section.Contact {
+  background-color: #ebe0f0;
+  padding: 30px;
+  z-index: 1;
+}
+section.Contact h2 {
+  color: #331758;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section.Contact .add {
+  text-align: center;
+  line-height: 3;
+}
+section.Contact .add .box1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 0.8rem;
+  padding-right: 620px;
+  padding-left: 620px;
+}
+section.Contact .add .box1 .card1 {
+  padding: 0;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 740px) {
+  .checkbtn {
+    display: block;
+  }
+  nav .logo{
+    font-size: 20px;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 65vh;
+    background: #402661;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.hover,
+  a.active {
+    background: none;
+    color: #ebe0f0;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .sec {
+    height: 500px;
+    width: 100%;
+  }
+  section.about .heading {
+    margin-bottom: 0.4rem;
+    margin-top: 0.7rem;
+  }
+  section.about .heading + p {
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  section.about .container .box {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1.5rem;
+  }
+  section.about {
+    padding: 30px;
+  }
+  .top .left img {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -50px;
+    margin-bottom: -2px;
+  }
+  .top .right h1 {
+    margin-bottom: 0.5rem;
+    margin-top: 100px;
+  }
+  .top .right h3 {
+    margin-bottom: 0.5rem;
+  }
+  .top .right p {
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+  #buttons {
+    border: 1px solid;
+    background-color: #9165cc;
+    width: 100px;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 5px;
+  }
+  .top {
+    flex-basis: 100%;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .project {
+    flex-basis: 100%;
+    flex-direction: column;
+    width: 100%;
+  }
+  section.project .left1 h2 {
+    margin-bottom: 1rem;
+  }
+  section.project .left1 p {
+    line-height: 1.4;
+  }
+  .flex .left1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+  }
+  section.Contact .add .box1{
+    margin-left: -475px;
+    grid-column-gap: 8px;
+    z-index: 2;
+  }
+}
