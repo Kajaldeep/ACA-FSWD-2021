@@ -9,8 +9,9 @@
   </head>
   <body>
     <div class="container">
-      <button type="button" onclick="get()">Get_token</button>
-      <p id="tokenid"></p>
+      <h1>JavaScript Assignment</h1>
+      <button type="button" onclick="get()">Get Token</button>
+      <p><span id = "demo1"></span><span id ="tokenid"></span></p>
       <button type="button" onclick="register()">Register</button>
       <form id="form" method="POST" action="http://localhost:12345/register" style="display: none">
         <p>
@@ -22,14 +23,14 @@
           />
         </p>
         <p>
-          Data:<input type="text" name="data" id="data" placeholder="abc" />
+          Data:<input type="text" name="data" id="data" placeholder="data" />
         </p>
         <p>
           Token:<input
             type="text"
             name="token"
             id="token"
-            placeholder="Token"
+            placeholder=" Get token from Get Token"
           />
         </p>
 
@@ -43,7 +44,7 @@
             type="text"
             name="token1"
             id="token1"
-            placeholder="TokenID"
+            placeholder="Token ID"
           />
         </p>
         <input type="submit" value="Submit" />

@@ -3,13 +3,15 @@ async function get_token() {
   const response = await fetch("http://localhost:12345/get_token");
   const token = await response.json();
   console.log(token);
-  document.getElementById("tokenid").textContent = "token: " + token.token;
+  document.getElementById("demo1").innerHTML = "Your generated token is: ";
+  document.getElementById("tokenid").textContent = token.token;
 }
 
 get_token().catch((err) => {
   console.log("error");
 });
 }
+
 var form = document.getElementById("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -38,7 +40,7 @@ form.addEventListener("submit", function (e) {
     var results = document.getElementById("results")
     results.innerHTML = "Your data has been saved successfully!"}
     else{
-      window.alert("Get token from Got Token");}
+      window.alert("Get token from Get Token");}
   })
 
 
