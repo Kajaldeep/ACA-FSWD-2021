@@ -44,15 +44,14 @@ HTTP is a protocol which allows the fetching of resources, such as HTML document
 | No domain validation required                     | requires at least domain validation and certain certificates even require legal document validation. |
 | No encryption                                     | the data is encrypted before sending                                                                 |
 
-d[7] | d[6] | d[5] | d[4] | d[3] | d[2] | d[1] | d[0] | q[0] | q[1] | q[2]
-x | x | x | x | x | x | x | 1 | 0 | 0 | 0  
-x | x | x | x | x | x | 1 | 0 | 0 | 0 | 1  
-x | x | x | x | x | 1 | 0 | 0 | 0 | 1 | 0  
-x | x | x | x | 1 | 0 | 0 | 0 | 0 | 1 | 1  
-x | x | x | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0
-x | x | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1
-x | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0
-1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1
+| x | x | x | x | x | x | x | 1 | 0 | 0 | 0 |
+| x | x | x | x | x | x | 1 | 0 | 0 | 0 | 1 |
+| x | x | x | x | x | 1 | 0 | 0 | 0 | 1 | 0 |  
+| x | x | x | x | 1 | 0 | 0 | 0 | 0 | 1 | 1 |  
+| x | x | x | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
+| x | x | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
+| x | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
 
 #### FRAMEWORKS VS LIBRARIES:
 
