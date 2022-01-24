@@ -34,24 +34,16 @@ HTTP is a protocol which allows the fetching of resources, such as HTML document
 
 #### HTTP VS HTTPS:
 
-| HTTP                                              | HTTPS                                                                                                |
-| ------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| HTTP URL in your browser's address bar is http:// | HTTPS URL in your browser's address bar is https://                                                  |
-| unsecured                                         | secured                                                                                              |
-| uses port 80                                      | uses port 443                                                                                        |
-| operates at application level                     | operates at transport level                                                                          |
-| No SSL certificates required                      | it is required that you have an SSL certificate and it is signed by a CA.                            |
-| No domain validation required                     | requires at least domain validation and certain certificates even require legal document validation. |
-| No encryption                                     | the data is encrypted before sending                                                                 |
-
-| x | x | x | x | x | x | x | 1 | 0 | 0 | 0 |
-| x | x | x | x | x | x | 1 | 0 | 0 | 0 | 1 |
-| x | x | x | x | x | 1 | 0 | 0 | 0 | 1 | 0 |  
-| x | x | x | x | 1 | 0 | 0 | 0 | 0 | 1 | 1 |  
-| x | x | x | 1 | 0 | 0 | 1 | 0 | 1 | 0 | 0 |
-| x | x | 1 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 1 |
-| x | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
-| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 1 | 1 |
+| d[7] | d[6] | d[5] | d[4] | d[3] | d[2] | d[1] | d[0] | q[0] | q[1] | q[2] |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| x    | x    | x    | x    | x    | x    | x    | 1    | 0    | 0    | 0    |
+| x    | x    | x    | x    | x    | x    | 1    | 0    | 0    | 0    | 1    |
+| x    | x    | x    | x    | x    | 1    | 0    | 0    | 0    | 1    | 0    |
+| x    | x    | x    | x    | 1    | 0    | 0    | 0    | 0    | 1    | 1    |
+| x    | x    | x    | 1    | 0    | 0    | 1    | 0    | 1    | 0    | 0    |
+| x    | x    | 1    | 0    | 0    | 0    | 0    | 0    | 1    | 0    | 1    |
+| x    | 1    | 0    | 0    | 0    | 0    | 0    | 0    | 1    | 1    | 0    |
+| 1    | 0    | 0    | 0    | 0    | 0    | 0    | 0    | 1    | 1    | 1    |
 
 #### FRAMEWORKS VS LIBRARIES:
 
